@@ -175,6 +175,7 @@ $ flask initdb --drop
 下面的操作演示了如何向数据库中添加记录：
 
 ```python
+>>> from app import db
 >>> from app import User, Movie  # 导入模型类
 >>> user = User(name='Grey Li')  # 创建一个 User 记录
 >>> m1 = Movie(title='Leon', year='1994')  # 创建一个 Movie 记录
